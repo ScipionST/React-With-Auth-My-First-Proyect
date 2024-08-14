@@ -1,0 +1,91 @@
+.apertura-cont {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding-top: 45px;
+}
+.apertura-cont .apertura {
+    display: grid;
+    justify-items: center;
+    gap: 25px;
+}
+.apertura-cont h1 {
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.4em;
+}
+.open-cont {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 200px;
+    border-radius: 50px;
+    border: 2px solid var(--color-green-1);
+    background-color: var(--color-white-2);
+}
+.open-cont .gate {
+  display: flex;
+}
+.gate-animation {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.gate-animation.starting {
+  animation: openingGate 1s ease infinite;
+}
+.gate-animation .gate-left {
+    height: 0;
+    width: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right:  20px solid var(--color-green-1);
+}
+.gate-animation .gate-right {
+    height: 0;
+    width: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left:  20px solid var(--color-green-1);
+}
+.apertura .gate-state {
+    user-select: none;
+}
+.apertura-cont span {
+    font-size: 1.25em;
+    font-weight: 350;
+}
+.apertura .server-status {
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 7.5px;
+}
+.apertura .status {
+    height: 25px;
+    width: 25px;
+    margin: 25px 0;
+    border-radius: 50%;
+    background-color: var(--color-red-adobe-1);
+}
+.apertura .status.online {
+    background-color: var(--color-green-1);
+}
+@media (hover: hover) {
+}
+
+@keyframes openingGate {
+    0%{
+        gap: 5px;
+    }
+    100%{
+        gap: 100px;
+    }
+}
