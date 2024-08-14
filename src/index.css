@@ -1,0 +1,98 @@
+:root {
+  font-family: Raleway, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-stretch: 100%;
+
+  color-scheme: light dark;
+  background-color: white;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --color-white-1: #f7f7f7;
+  --color-white-2: #eeeeee;
+  --color-white-3: #bec8d1;
+  --color-cyan-1: #11c8d6;
+  --color-cyan-1-50: rgba(17, 200, 214, 0.1);
+  --color-pink-1: #fe018f;
+  --color-pink-1-50: rgba(254, 1, 144, 0.25);
+  --color-blue-1: #213547;
+  --color-grey-1: #5a676b;
+  --color-grey-1-50: rgba(90, 103, 107, 0.5);
+  --color-grey-2: #373b3e;
+  --color-grey-3: #242424;
+  --color-green-1: #137a7f;
+  --color-green-1-50: rgba(19, 122, 127, 0.5);
+  --color-red-adobe-1: #b30b00;
+  --color-red-adobe-1-50: rgba(179, 12, 0, 0.5);
+
+  --pink-p4v1: #e12885;
+  --pink-p5v1: #ff629d;
+  --pink-p5v2: #ff1688;
+  --cyan-p2v1: #d0ecf4;
+  --cyan-p2v2: #95cfd0;
+  --cyan-p3v1: #00a1bb;
+  --cyan-p5v1: #87e5cf;
+  --cyan-p5v2: #47c8c0;
+  --cyan-p5v3: #55d1d0;
+  --green-p3v1: #95d2d3;
+  --green-p3v2: #00474a;
+  --green-p4v1: #86cecb;
+  --green-p4v2: #137a7f;
+  --retro-p5v1: #e2ddcc;
+  --grey-p2v1: #a1adba;
+  --grey-p2v2: #565d69;
+  --grey-p3v1: #a1acb7;
+  --grey-p3v2: #59606c;
+  --grey-p4v1: #bec8d1;
+  --grey-p5v1: #5a676b;
+  --black-p2v1: #4d5156;
+  --black-p4v1: #373b3e;
+}
+
+body {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-cyan-1);
+}
+h1 {
+  font-weight: 500;
+  margin: 0;
+}
+h2 {
+  font-weight: 400;
+}
+h3 {
+  font-weight: 500;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: var(--color-grey-2);
+  }
+  body {
+    color: var(--color-white-2);
+  }
+  h1, h2, h3, p {
+    color: var(--color-white-2);
+  }
+}
+
+@font-face {
+  font-family: 'Cabin';
+  src: url(./assets/fonts/Raleway-Variable.ttf);
+  font-weight: 100 900;
+  font-style: normal;
+}
