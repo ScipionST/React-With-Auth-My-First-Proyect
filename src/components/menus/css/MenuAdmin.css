@@ -1,0 +1,15 @@
+.menu-admin {
+    position: absolute;
+    height: 100%;
+    width: 200px;
+    left: -200px;
+    background-color: var(--color-grey-2);
+    z-index: 10;
+    transition: left 0.75s ease;
+}
+.menu-admin.expanded {
+  left: 0;
+}
+.menu-admin.hidden {
+  left: -200px;
+}

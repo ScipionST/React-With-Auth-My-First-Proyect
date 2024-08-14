@@ -1,0 +1,14 @@
+.button-comp {
+  cursor: pointer;
+  height: 100%;
+  padding: 0 5px;
+  border-radius: 5px;
+  background-color: var(--color-white-2);
+  border: 2px solid var(--color-white-3);
+}
+@media (prefers-color-scheme: dark) {
+  .button-comp {
+    background-color: var(--color-grey-1);
+      color: var(--color-white-2);
+  }
+}
